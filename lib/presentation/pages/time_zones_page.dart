@@ -76,10 +76,10 @@ class _TimezonesPageState extends State<TimezonesPage> {
                             setState(() {
                               _loading = false;
                             });
-                            _scaffKey.currentState.showSnackBar(SnackBar(
-                              content: Text(
-                                  "The timezone clock is already available in the list."),
-                            ));
+
+                            ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                                content: Text(
+                                    "The timezone clock is already available in the list.")));
                           }
                         },
                 )
