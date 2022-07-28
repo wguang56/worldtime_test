@@ -49,7 +49,7 @@ class _TimezonesPageState extends State<TimezonesPage> {
                   mode: Mode.MENU,
                   selectedItem: _timezone,
                 ),
-                RaisedButton(
+                ElevatedButton(
                   child: _loading ? CircularProgressIndicator() : Text("Add"),
                   onPressed: _loading
                       ? null
